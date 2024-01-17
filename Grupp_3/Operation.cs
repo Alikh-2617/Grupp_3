@@ -25,10 +25,17 @@ namespace Grupp_3
         {
 
         }
-        public string Gender(long personnummer)
-        {
 
+        public string Gender(string personnummer)
+        {    
+            // "Oscar", säga till om person nummret tillhör man eller kvinna ! 
+            int GenderNr = int.Parse(personnummer.Substring(8, 1));
+    
+            if (GenderNr % 2 == 0)
+            {
+                return "Kvinna";
+            }
+            return "Man";
         }
-
     }
 }
