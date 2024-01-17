@@ -32,6 +32,10 @@ namespace Grupp_3
             }
         }
 
+
+        return true;
+    }
+
         // Kontrollera kontrollsiffran
         int[] weights = { 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
         int sum = 0;
@@ -90,4 +94,5 @@ namespace Grupp_3
         }
     }
 }
+
 
