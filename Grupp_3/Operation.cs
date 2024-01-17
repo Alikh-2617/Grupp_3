@@ -1,5 +1,7 @@
 namespace Grupp_3
 {
+      public class Operation : IOperation
+    {
     public bool IsValidPersonnummer(string personnummer)
     {
         // Kontrollera om längden är korrekt (12 tecken inklusive bindestreck)
@@ -55,8 +57,7 @@ namespace Grupp_3
         return sum % 10 == 0;
     }
 
-    public class Operation : IOperation
-    {
+  
         public long PersonnummerToInt(string personnummer)
         {
             // om personnummer varit 12 sif så det tar bort första 19 
@@ -92,7 +93,40 @@ namespace Grupp_3
             }
             return "Man";
         }
+
+         //Helen ange personnummer
+    static void Main()
+    {
+        Console.WriteLine("Ange personnummer (ÅÅMMDD-XXXX): ");
+        string personnummer = Console.ReadLine();
+
+        if (IsValidPersonnummer(personnummer))
+        {
+            Console.WriteLine("Personnumret är giltigt.");
+        }
+        else
+        {
+            Console.WriteLine("Personnumret är ogiltigt.");
+        }
     }
+    static bool IsValidPersonnummer(string personnummer)
+    {
+        // Kontrollera längd och format
+        if (personnummer.Length != 13 || !personnummer.Substring(6, 1).Equals("-"))
+        {
+            return false;
+        }
+
+
+        // Kontrollera månaden
+        int month = int.Parse(personnummer.Substring(2, 2));
+        if (month < 1 || month > 12)
+        {
+            return false;
+        }
+    }
+    }
+
 }
 
 
