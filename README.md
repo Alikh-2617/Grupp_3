@@ -5,7 +5,7 @@
 Detta projekt är en .NET Console App skapat som en del av en skoluppgift. Applikationen har tre grundläggande funktioner, och varje funktion har motsvarande xUnit-test.
 
  Funktion 1: tar in en string och kontrollera om den string innehåller rätt andra siffror.
- Funktion 2: tar in ett int värde(person nummer) och kontrollera om det är rätt värde (person nummer)
+ Funktion 2: tar in ett int värde(person nummer) och kontrollera om det är rätt värde (person nummer) 
  Funktion 3: tar in ett int värde (person nummer) och konfigurerat om det är till en kvinna eller män.
 xUnit Tester
 
