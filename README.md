@@ -1,5 +1,5 @@
 # Grupp_3
-
+  
 .NET Console App - School Assignment Beskrivning
 
 Detta projekt är en .NET Console App skapat som en del av en skoluppgift. Applikationen har tre grundläggande funktioner, och varje funktion har motsvarande xUnit-test.
