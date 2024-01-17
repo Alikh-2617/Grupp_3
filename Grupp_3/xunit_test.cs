@@ -1,3 +1,4 @@
+
  [Theory]
     [InlineData("19950621-0930", true)]  // korrekt personnummer
     [InlineData("19990102-1234", true)]  // korrekt personnummer
@@ -12,3 +13,13 @@
 
             Assert.Equal(expected, result);
         }
+
+namespace Grupp_3
+{
+    public class Xunit_test
+    {
+        
+
+    }
+}
+
