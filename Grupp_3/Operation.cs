@@ -30,21 +30,5 @@
             }
         }
 
-        // Kontrollera kontrollsiffran
-        int[] weights = { 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
-        int sum = 0;
-
-        for (int i = 0; i < 12; i++)
-        {
-            // int.pars konvertera till int base 32 men person nummert är längre än inte base 32  
-            int digit = int.Parse(personnummer[i].ToString());
-            sum += digit * weights[i];
-
-            if (digit > 4)
-            {
-                sum -= 9;
-            }
-        }
-
-        return sum % 10 == 0;
+        return true;
     }
