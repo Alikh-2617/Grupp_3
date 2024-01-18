@@ -4,7 +4,7 @@ on:
     branches:
       - main
 
-jobs:
+jobsTest:
   setup_dotnet:
     runs-on: ubuntu-latest
 
@@ -23,7 +23,7 @@ jobs:
     - name: Run Unit Tests
       run: dotnet test
 
-jobs:
+jobPublish:
   build:
     runs-on: ubuntu-latest
 
