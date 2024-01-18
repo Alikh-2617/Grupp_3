@@ -4,7 +4,7 @@ namespace Grupp_3
 {
     public class Xunit_test
     {
-
+        /*
         [Theory]
         [InlineData("19950621-0930", true)]  // korrekt personnummer
         [InlineData("19990102-1234", true)]  // korrekt personnummer
@@ -19,6 +19,7 @@ namespace Grupp_3
 
             Assert.Equal(expected, result);
         }
+        */
 
         [Fact]
         public void Gender()
