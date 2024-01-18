@@ -82,7 +82,7 @@ namespace Grupp_3
 
         }
 
-        public string Gender(string personnummer)
+        public string Gender(long personnummer)
         {    
             // "Oscar", säga till om person nummret tillhör man eller kvinna ! 
             int GenderNr = int.Parse(personnummer.Substring(8, 1));
@@ -128,5 +128,3 @@ namespace Grupp_3
     }
 
 }
-
-
