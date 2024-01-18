@@ -2,8 +2,8 @@ namespace Grupp_3
 {
     public interface IOperation
     {
-        public long PersonnummerToInt(string personnummer);
-        public bool IsValidPersonnummer(long personnummer);
-        public string Gender(long personnummer);
+        public string PersonnummerToCurrent(string personnummer);
+        public bool IsValidPersonnummer(string personnummer);
+        public string Gender(string personnummer);
     }
 }
