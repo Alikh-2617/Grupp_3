@@ -41,6 +41,6 @@ jobs:
         run: docker login -u ${{secrets.USER }} -p ${{ secrets.PASS }}
  
       - name: Build and push docker image
-        run: docker build -t alikhavari2617/Grupp_3 .
+        run: docker build -t alikhavari2617/grupp_3 .
       - name: push image
-        run: docker push alikhavari2617/Grupp_3
+        run: docker push alikhavari2617/grupp_3
