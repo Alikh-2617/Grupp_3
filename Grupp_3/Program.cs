@@ -6,12 +6,30 @@ namespace Grupp_3
     {
         static void Main(string[] args)
         {
-            Operation operation = new Operation();
+            try
+            {
+                Operation operation = new Operation();
+                Console.Write(" Hej och välkommen till Applicationen !\n\tHär får du skriva ditt person nummer : ");
+                string personnummer = Console.ReadLine();
 
-            // först vi ska rätta person nummerts siffror (att den ska vara 10 sif) och convertera till int base 32
-            // sedan vi checka om person nummert är korekt 
-            // sedan kollar vi vilken kön detta är 
-
+                string result = operation.PersonnummerToCurrent(personnummer);
+                if(result == null)
+                {
+                    Console.WriteLine($" person nummers är minder än vanligt fall !\n\t => {personnummer}");
+                    return;
+                }
+                bool trust = operation.IsValidpersonnummer(result);
+                if(trust != true)
+                {
+                    Console.WriteLine($" person nummers är fel  !\n\t => {personnummer}");
+                    return;
+                }
+                Console.WriteLine($"\n\n Rätt person nummer !\n personen med den personnummer =>  [ {personnummer} ]  är en =>  {operation.Gender(personnummer)}\n\n\n\n");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine($"Oj vi fick Error ! \n{e.Message}");
+            }
         }
     }
 }
