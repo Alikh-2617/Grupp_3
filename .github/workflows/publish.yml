@@ -3,7 +3,7 @@ name: Unit Tests on xunit branch
 on:
   push:
     branches:
-      - xunit
+      - oscar-testing
 
 jobs:
   setup_dotnet:
