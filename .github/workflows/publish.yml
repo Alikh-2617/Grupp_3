@@ -23,28 +23,28 @@ jobs:
     - name: Run Unit Tests
       run: dotnet test
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout respository
-#         uses: actions/checkout@v3
+    steps:
+      - name: Checkout respository
+        uses: actions/checkout@v3
 
-#       - name: Set up .net
-#         uses: actions/setup-dotnet@v3
-#         with:
-#           dotnet-version: '7.x'
+      - name: Set up .net
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.x'
 
-#       - name: Restore and build
-#         run: |
-#           dotnet restore
-#           dotnet build
+      - name: Restore and build
+        run: |
+          dotnet restore
+          dotnet build
 
-#       - name: Login to dockerhub
-#         run: docker login -u ${{secrets.USER }} -p ${{ secrets.PASS }}
+      - name: Login to dockerhub
+        run: docker login -u ${{secrets.USER }} -p ${{ secrets.PASS }}
  
-#       - name: Build and push docker image
-#         run: docker build -t alikhavari2617/Grupp_3 .
-#       - name: push image
-#         run: docker push alikhavari2617/Grupp_3
+      - name: Build and push docker image
+        run: docker build -t alikhavari2617/Grupp_3 .
+      - name: push image
+        run: docker push alikhavari2617/Grupp_3
