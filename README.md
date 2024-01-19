@@ -15,8 +15,9 @@ Svenskt personnummer är centralt för många administrativa och identifikations
 För att säkerställa korrekt funktionalitet har tre xUnit-tester skapats för de tre funktionerna.
 
     Tester för Funktion 1: 
-    Tester för Funktion 2: 
-    Tester för Funktion 3: 
+    Tester för Funktion 2: Testar en kvinnligt personnummer för att se först att den matchar med anting 
+    "Man" eller Kvinna" från Köns funktionen och checkar ifall personnummret tillhör en kvinna, 
+    vilket det ska göra.
 
 Git Actions Workflow För xunit branch : 
 Beskrivning: Detta jobb körs vid varje push till huvudgrenen.
