@@ -20,13 +20,16 @@ För att säkerställa korrekt funktionalitet har tre xUnit-tester skapats för 
     vilket det ska göra.
 
 Git Actions Workflow För xunit branch : 
+
 Beskrivning: Detta jobb körs vid varje push till huvudgrenen.
 
 För Main branch : vi hade två jobs : 
     Jobb 1: Kör xUnit Tester
 
 Beskrivning: Detta jobb körs vid varje push till huvudgrenen.
+  
     Jobb 2: Bygg och Publicera till Docker Hub
+
 
 Beskrivning: Detta jobb körs endast om xUnit-testerna är framgångsrika och triggar en push till huvudgrenen.
     vi försökte att injekta Docker hub credential med hjälp av Github secrets.
